@@ -112,9 +112,9 @@ public class AutoScalingScenario {
 	public static void main(String[] args) {
 		String lbName = "BookServiceLB";
 		String secTomcatGroupId = "sg-0098decf0d51da053";
-		String secMySQLGroupId = "sg-07b5c19f6c48055f5";
-		String imgIdRest = "ami-0b5a3db869774f43d";
-		String imgIdMySQL = "ami-04ba04f6a85f30868";
+		String secMySQLGroupId = "sg-042e2ddde529d8a88";
+		String imgIdRest = "ami-03744df9b3216a8e8";
+		String imgIdMySQL = "ami-0f0c03219214d761f";
 		String instType = "t2.micro";
 		String keyPairName = "test_docker";
 		String dbHost;
