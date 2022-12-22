@@ -52,7 +52,7 @@ public class AutoScalingScenario {
 		LaunchTemplateSpecification spec = LaunchTemplateSpecification.builder().
 				launchTemplateId(templateId).build();
 		CreateAutoScalingGroupRequest req = CreateAutoScalingGroupRequest.builder().
-				autoScalingGroupName(groupName).availabilityZones("us-west-2a","us-west-2b").
+				autoScalingGroupName(groupName).availabilityZones("us-west-2a","us-west-2b","us-west-2c","us-west-2d").
 				healthCheckType("ELB").loadBalancerNames(lbName).
 				desiredCapacity(desiredCapacity).minSize(minCapacity).
 				maxSize(maxCapacity).launchTemplate(spec).

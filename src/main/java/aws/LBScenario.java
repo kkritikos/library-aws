@@ -26,7 +26,7 @@ public class LBScenario {
 		Listener lst = Listener.builder().instancePort(8080).instanceProtocol("tcp").
 				loadBalancerPort(8080).protocol("tcp").build();
 		CreateLoadBalancerRequest req = CreateLoadBalancerRequest.builder().
-				availabilityZones("us-west-2a","us-west-2b").loadBalancerName(lbName).
+				availabilityZones("us-west-2a","us-west-2b","us-west-2c","us-west-2d").loadBalancerName(lbName).
 				listeners(lst).securityGroups(secGroupId).build();
 		asc.createLoadBalancer(req);
 	}
